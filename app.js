@@ -5,7 +5,7 @@ const Intern = require('./lib/Intern');
 const generateSite = require('./src/generate-site');
 const fs = require("fs"); // file system is required
 const path = require("path");
-const OUTPUT_DIR = path.resolve(, "output"); // edit directory name
+const OUTPUT_DIR = path.resolve(__dirname, "output"); // is this the correct directory???
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 const teamMembers = [];
 
