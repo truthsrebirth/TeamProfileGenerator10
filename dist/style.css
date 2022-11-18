@@ -16,3 +16,27 @@ main {
     padding: 10px;
 }
 
+.card-header {
+    background-color: blue;
+    color:antiquewhite;
+}
+
+.card {
+    margin: 20px;
+    padding: 15px;
+}
+
+.list-group {
+    color:aqua;
+}
+
+/* Put it all on one line, make it smaller */
+.list-group-item {
+    overflow: visible;
+    white-space: nowrap;
+}
+
+#email {
+    color: green;
+}
+
