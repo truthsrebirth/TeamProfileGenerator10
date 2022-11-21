@@ -28,7 +28,7 @@
     
 ## Usage
     
-    To run the application, type "node app.js"
+    To run the application, type "node index.js"
     
     To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
     
