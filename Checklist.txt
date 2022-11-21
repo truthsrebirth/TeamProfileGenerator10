@@ -61,6 +61,7 @@
 
 12. The application must have these classes: Employee, Manager, Engineer, and Intern. The tests for these classes (in the _tests_ directory) must all pass.
 
+***DONE***
 13. The first class is an Employee parent class with the following properties and methods:
 
     name
@@ -71,8 +72,9 @@
     getEmail()
     getRole()           // Returns 'Employee'
 
-- The other three classes will extend Employee
-- In addition to Employee's properties and methods, Manager will also have:
+    - The other three classes will extend Employee
+
+    - In addition to Employee's properties and methods, Manager will also have:
 
     officeNumber
     getRole()           // Overridden to return 'Manager'

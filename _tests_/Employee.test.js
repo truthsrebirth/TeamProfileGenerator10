@@ -1,6 +1,11 @@
 const Employee = require('../lib/Employee'); // referencing the js file
 const employee = new Employee('Jordan', '8282444', 'jordan23@gmail.com');
 
+describe('Employee class', () => {
+    // variables for testing?
+
+})
+
 test('test if we can get the constructor values for the employee object', () => {
     expect(employee.name).toBe('Jordan');
     expect(employee.id).toBe('8282444');
