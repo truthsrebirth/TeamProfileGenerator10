@@ -2,8 +2,8 @@
 
 ## Description
     
-    - This application runs with node.js commands to generate an html file to create a team profile page.
-    
+    - Through javascript, html, css, and node, I was able to create an application that generates an html file displaying a team profile generator, with information regarding said person's name, email, github account, and role.
+
 ## Table of Contents
     
     If your README is long, add a table of contents to make it easy for users to find what they need.
@@ -28,7 +28,7 @@
     
 ## Usage
     
-    To run the application, type "node index.js"
+    To run the application, type "node app.js"
     
     To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
     
