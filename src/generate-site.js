@@ -1,6 +1,3 @@
-
-
-
 const generateTeam = (team) => {
     console.log(team);
     // Create an empty array to push html elements on to and loop through the team data
@@ -30,8 +27,9 @@ const generateTeam = (team) => {
             ${engineer.getName()} <br/>
             <i class="fas fa-glasses"></i>Engineer</div>
             <ul class="list-group list-group-flush">
+            <li class="list-group-item">Role: ${engineer.getRole()}</;i>
               <li class="list-group-item">ID: ${engineer.getId()}</;i>
-              <li class="list-group-item">Email: <span id="email"><a href="mailto:${enginner.getEmail()}">${engineer.getEmail()}</a></span></li>
+              <li class="list-group-item">Email: <span id="email"><a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></span></li>
               <li class="list-group-item">Github Username: <a target="_blank" href="https://github.com/${engineer.getGithub()}">${engineer.getGithub()}</a></li>
             </ul>
         </div>
@@ -75,11 +73,11 @@ const generateTeam = (team) => {
 // export function to generate entire page
 module.exports = team => {
     return `
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http=equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial=scale=1.0">
     <link rel="stylesheet" href="../style.css" /> 
     <title>Team Profile Generator</title>
@@ -95,4 +93,4 @@ module.exports = team => {
 </html>
     `;
 
-}
+};
