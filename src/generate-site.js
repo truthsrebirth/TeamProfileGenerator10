@@ -1,3 +1,6 @@
+
+
+
 const generateTeam = (team) => {
     console.log(team);
     // Create an empty array to push html elements on to and loop through the team data
@@ -8,12 +11,12 @@ const generateTeam = (team) => {
         let managerHtml = `
         <div class="card" style="width: 18rem;">
             <div class="card-header">
-            ${manager.name} <br/>
+            ${manager.getName()} <br/>
             <i class="fas fa-mug-hot"</i>Manager</div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">ID: ${manager.id}</li>
-              <li class="list-group-item">Email: <span id="email"><a href="mailto:${manager.email}">${manager.email}</a></li>
-              <li class="list-group-item">Office Number: ${manager.officeNumber}</li>
+              <li class="list-group-item">ID: ${manager.getId()}</li>
+              <li class="list-group-item">Email: <span id="email"><a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
+              <li class="list-group-item">Office Number: ${manager.getOfficeNumber()}</li>
             </ul>
         </div>
         `;
@@ -24,12 +27,12 @@ const generateTeam = (team) => {
         let engineerHtml = `
         <div class="card" style="width: 18rem;">
             <div class="card-header">
-            ${engineer.name} <br/>
+            ${engineer.getName()} <br/>
             <i class="fas fa-glasses"></i>Engineer</div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">ID: ${engineer.id}</;i>
-              <li class="list-group-item">Email: <span id="email"><a href="mailto:${enginner.email}">${engineer.email}</a></span></li>
-              <li class="list-group-item">Github Username: <a target="_blank" href="https://github.com/${engineer.githubUsername}">${engineer.githubUsername}</a></li>
+              <li class="list-group-item">ID: ${engineer.getId()}</;i>
+              <li class="list-group-item">Email: <span id="email"><a href="mailto:${enginner.getEmail()}">${engineer.getEmail()}</a></span></li>
+              <li class="list-group-item">Github Username: <a target="_blank" href="https://github.com/${engineer.getGithub()}">${engineer.getGithub()}</a></li>
             </ul>
         </div>
         `;
@@ -40,12 +43,12 @@ const generateTeam = (team) => {
         let internHtml = `
         <div class="card" style="width: 18rem;">
             <div class="card-header">
-            ${intern.name} <br/>
+            ${intern.getName()} <br/>
             <i class="fas fa-user-graduate"></i>Intern</div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">ID: ${intern.id}</;i>
-              <li class="list-group-item">Email: <span id="email"><a href="mailto:${intern.email}">${intern.email}</a></span></li>
-              <li class="list-group-item">School: ${intern.school}</li>
+              <li class="list-group-item">ID: ${intern.getId()}</;i>
+              <li class="list-group-item">Email: <span id="email"><a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></span></li>
+              <li class="list-group-item">School: ${intern.getSchool()}</li>
             </ul>
         </div>
         `;

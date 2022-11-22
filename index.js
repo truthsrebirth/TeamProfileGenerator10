@@ -2,11 +2,11 @@ const inquirer = require('inquirer');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-const generateSite = require('./src/generate-site');
 const fs = require("fs"); // file system is required
 const path = require("path");
-const OUTPUT_DIR = path.resolve(__dirname, "output"); // is this the correct directory???
+const OUTPUT_DIR = path.resolve(__dirname, "output"); // generates html to output directory
 const outputPath = path.join(OUTPUT_DIR, "team.html");
+const generateSite = require('./src/generate-site'); // 
 const teamMembers = [];
 
 const promptManager = () => {
@@ -241,6 +241,6 @@ const buildTeam = () => {
         fs.mkdirSync(OUTPUT_DIR)
     }
     fs.writeFileSync(outputPath, generateSite(teamMembers), "utf-8");
-}
+};
 
 promptManager();
