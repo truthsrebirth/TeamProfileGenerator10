@@ -1,5 +1,5 @@
 header {
-    color: turquoise;
+    color: white;
     background-color: rgba(255, 0, 0, 0.5);
     padding: 15px;
     display: flex;
@@ -9,5 +9,11 @@ header {
     padding: 15px;
 }
 
-
-
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 10px;
+    background-color: paleturquoise;
+    content: white;
+}
